@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                tools:context=".VOENcoinActivity">
+
+    <ScrollView
+            android:layout_width="377dp"
+            android:layout_height="280dp"
+            android:layout_above="@+id/viewBlockchainButton"
+            android:layout_marginBottom="17dp"
+            android:layout_marginEnd="-3dp"
+            android:layout_alignEnd="@+id/viewBlockchainButton" android:layout_marginStart="5dp"
+            android:layout_alignStart="@+id/viewBlockchainButton"
+            android:layout_marginTop="29dp" android:layout_below="@+id/amountEditText">
+
+        <TextView
+                android:id="@+id/outputTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="256dp"
+                android:textSize="18sp"
+                android:textStyle="bold" android:layout_alignParentEnd="true"
+                android:layout_marginEnd="17dp" android:layout_alignParentStart="true" android:layout_marginStart="0dp"
+                android:layout_above="@+id/viewBlockchainButton" android:layout_marginBottom="14dp"/>
+    </ScrollView>
+
+    <EditText
+            android:id="@+id/inputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Recipient Address"
+            android:layout_alignParentStart="true" android:layout_marginStart="16dp"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="16dp" android:layout_marginTop="16dp"
+            android:layout_alignParentTop="true"/>
+    <EditText
+            android:id="@+id/amountEditText"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:layout_marginTop="29dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginStart="2dp" android:layout_marginEnd="0dp"
+            android:layout_below="@+id/inputEditText" android:layout_alignStart="@+id/inputEditText"
+            android:layout_alignEnd="@+id/inputEditText"/>
+    <Button
+            android:id="@+id/viewBlockchainButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Blockchain" android:layout_marginStart="-5dp"
+            android:layout_alignStart="@+id/sendCoinsButton" android:layout_marginEnd="5dp"
+            android:layout_alignEnd="@+id/sendCoinsButton" android:layout_above="@+id/sendCoinsButton"
+            android:layout_marginBottom="18dp"/>
+    <Button
+            android:id="@+id/sendCoinsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Coins"
+            android:layout_above="@+id/mineButton" android:layout_marginBottom="29dp"
+            android:layout_marginStart="0dp" android:layout_alignStart="@+id/mineButton" android:layout_marginEnd="0dp"
+            android:layout_alignEnd="@+id/mineButton"/>
+    <Button
+            android:id="@+id/mineButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mine"
+            android:layout_alignParentBottom="true" android:layout_marginBottom="38dp"
+    />
+
+</RelativeLayout>

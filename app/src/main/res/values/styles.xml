@@ -1,0 +1,6 @@
+<resources>
+    <!-- Определение базового стиля приложения -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Дополнительные атрибуты стиля, если нужно -->
+    </style>
+</resources>
